@@ -81,18 +81,21 @@
 }
 
 .masthead {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;  
+	position: relative;
+	width: 100%;
+	height: auto;
+	min-height: 35rem;
+	padding: 15rem 0;
+}
+.logo {
+	height: 80px;
 }
 .mapa {
-  -webkit-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;  
+	-webkit-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;  
 }
 .mapa:hover {
-  opacity: 0.6;  
+	opacity: 0.6;  
 }
 @media (max-width: 899px) {
 	.masthead {
@@ -101,6 +104,9 @@
 		background-repeat: no-repeat;
 		background-attachment: scroll;
 		background-size: cover;
+	}
+	.logo {
+		height: 45px;
 	}
 }
 @media (min-width: 900px) {
@@ -131,7 +137,7 @@
 	}
 }
 .masthead h1 {
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', serif;
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
@@ -139,7 +145,7 @@
 }
 
 .masthead h2 {
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', serif;
   max-width: 20rem;
   font-size: 1rem;
 }
