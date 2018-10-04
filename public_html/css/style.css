@@ -234,7 +234,26 @@
   padding: 3rem;
   font-size: 90%;
 }
-
+.vzdaleny_pristup_1, .vzdaleny_pristup_2 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 400px;
+    max-width: 500px;
+    margin: auto;
+}
+.vzdaleny_pristup_1 {
+    background-image: url('../img/vzdaleny_pristup_1_bw.png');
+    }
+.vzdaleny_pristup_1:hover {
+    background-image: url('../img/vzdaleny_pristup_1.png');
+    }
+.vzdaleny_pristup_2 {
+    background-image: url('../img/vzdaleny_pristup_2_bw.png');
+    }
+.vzdaleny_pristup_2:hover {
+    background-image: url('../img/vzdaleny_pristup_2.png');
+    }
 @media (min-width: 992px) {
   .projects-section .project-text {
     padding: 5rem;
