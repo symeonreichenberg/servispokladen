@@ -40,3 +40,20 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+
+function hideClanek1() {
+    var x = document.getElementById('btn_clanek_1');
+    x.style.display = "none";
+}
+function hideClanek2() {
+    var x = document.getElementById('btn_clanek_2');
+    x.style.display = "none";
+}
+function hideClanek3() {
+    var x = document.getElementById('btn_clanek_3');
+    x.style.display = "none";
+}
+function hideClanek4() {
+    var x = document.getElementById('btn_clanek_4');
+    x.style.display = "none";
+}
