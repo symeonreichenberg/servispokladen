@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 
 .btn-xl {
@@ -13,8 +13,8 @@ body {
 }
 
 .content-section {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .content-section-heading h2 {
@@ -33,6 +33,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+  font-family: 'Merriweather', Times New Roman, serif;
 }
 
 .text-faded {
@@ -309,7 +310,7 @@ h6 {
 
 .portfolio-item .caption .caption-content {
   color: #fff;
-  margin: auto 1rem 1rem;
+  margin: auto 2rem 2rem;
 }
 
 .portfolio-item .caption .caption-content h2 {
@@ -318,14 +319,16 @@ h6 {
 }
 
 .portfolio-item .caption .caption-content p {
-  font-weight: 300;
-  font-size: 0.9rem;
-  line-heigt: 100% !important;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 110% !important;
 }
 
 @media (min-width: 992px) {
-  .portfolio-item {
-    max-width: none;
+    .portfolio-item {
+    display: inline-block;
+      max-width: none;
+    width: 100%;
     margin: 0;
   }
   .portfolio-item .caption {
@@ -357,26 +360,8 @@ h6 {
 }
 
 footer.footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-footer.footer .social-link {
-  display: block;
-  height: 4rem;
-  width: 4rem;
-  line-height: 4.3rem;
-  font-size: 1.5rem;
-  background-color: #382929;
-  -webkit-transition: background-color 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out;
-  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
-
-footer.footer .social-link:hover {
-  background-color: #155d74;
-  text-decoration: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 a {
@@ -440,6 +425,14 @@ a:hover, a:focus, a:active {
 .bg-kava:hover, .bg-caj:hover, .bg-kapsle:hover, .growen:hover {
     transform: scale(1.1);
 }
+.beans {
+    height: 12.5rem;
+    width: auto;
+    transition: all .2s ease-in-out;
+}
+.beans:hover {
+    transform: scale(0.9);
+}
 .bg-kava {
     background-image: url("../img/kava.jpg");
 }
@@ -448,6 +441,29 @@ a:hover, a:focus, a:active {
 }
 .bg-kapsle {
     background-image: url("../img/kapsle.jpg");
+}
+.bg-prodej-1, .bg-prodej-2, .bg-prodej-3, .bg-servis-1, .bg-servis-2, .bg-servis-3 {
+    background-position: center center;
+    background-size: 99% 99%;
+    background-repeat: no-repeat;
+}
+.bg-prodej-1 {
+    background-image: url("../img/prodej-1.jpg");
+}
+.bg-prodej-2 {
+    background-image: url("../img/prodej-2.jpg");
+}
+.bg-prodej-3 {
+    background-image: url("../img/prodej-3.jpg");
+}
+.bg-servis-1 {
+    background-image: url("../img/servis-1.jpg");
+}
+.bg-servis-2 {
+    background-image: url("../img/servis-2.jpg");
+}
+.bg-servis-3 {
+    background-image: url("../img/servis-3.jpg");
 }
 .quote{
 }
@@ -463,21 +479,27 @@ a:hover, a:focus, a:active {
 }
 .quote blockquote:before,
 .quote blockquote:after{
-    font-family: FontAwesome;
+    font-family: 'Source Sans', Arial, sans-serif;
     position: absolute;
     /* -- inside the relative position of blockquote -- */
-    top: 13px;
+    top: 0;
     color: #EFEFEF;
-    font-size: 34px;
+    font-size: 15rem;
 }
 .quote blockquote:before{
-    content: "\f10e";
+    content: "”";
     margin-right: 13px;
     right: 100%;
     top: 50%;
 }
 .quote blockquote:after{
-    content: "\f10d";
+    content: "“";
     margin-left: 13px;
-    left: 100%;  
+    left: 100%;
+}
+@media (max-width: 750px) {
+    .quote blockquote:before, .quote blockquote:after {
+        content: "" !important;
+        display: none !important;
+    }
 }
