@@ -66,6 +66,7 @@ h6 {
   color: white;
   background: rgba(64, 43, 43, 0.5);
   line-height: 45px;
+  z-index: 999;
 }
 
 .scroll-to-top:focus, .scroll-to-top:hover {
@@ -93,10 +94,10 @@ h6 {
     background-size: cover;
 }
 .reference {
-    padding: 15rem 0;
+    padding: 5rem 0;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 100%;
 }
 @media (max-width: 799px) {
     .masthead {
@@ -277,8 +278,14 @@ h6 {
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
-
-
+.product {
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+    background-size: cover;
+}
 
 .callout h2 {
   font-size: 3.5rem;
@@ -357,11 +364,6 @@ h6 {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
-}
-
-footer.footer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 a {
@@ -467,8 +469,14 @@ a:hover, a:focus, a:active {
 }
 .quote{
 }
-.quote p, .quote h3 {
+.quote h3 {
     text-rendering: optimizeLegibility;
+    font-size: 1.5rem;
+}
+.quote p {
+    text-rendering: optimizeLegibility;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 .quote blockquote {
     position: relative;  /*  <--- */
@@ -476,6 +484,13 @@ a:hover, a:focus, a:active {
     padding: 1rem 1.2rem;
     width: 80%;  /* create space for the quotes */
     margin: 1rem auto 2rem;
+}
+@media (max-width: 992px) {
+    .quote blockquote {
+        width: 100%;
+        padding: 0.5rem;
+        margin: 0;
+    }
 }
 .quote blockquote:before,
 .quote blockquote:after{
@@ -490,12 +505,13 @@ a:hover, a:focus, a:active {
     content: "”";
     margin-right: 13px;
     right: 100%;
-    top: 50%;
+    top: 30%;
 }
 .quote blockquote:after{
     content: "“";
     margin-left: 13px;
     left: 100%;
+    top: -20%;
 }
 @media (max-width: 750px) {
     .quote blockquote:before, .quote blockquote:after {

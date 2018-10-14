@@ -12,6 +12,12 @@ html {
 }
 .roboto-slab {
     font-family: 'Roboto Slab', Times New Roman, serif;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.5rem;
+}
+.merriweather {
+    font-family: 'Merriweather', Times New Roman, serif;
 }
 
 .btn-xl {
@@ -31,6 +37,11 @@ html {
   font-size: 1rem;
   text-transform: uppercase;
 }
+a, a:hover, a:active, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 
 h1,
 h2,
@@ -45,20 +56,6 @@ h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Map */
-.map {
-  height: 30rem;
-}
-
-@media (max-width: 992px) {
-  .map {
-    height: 75%;
-  }
-}
-
-.map iframe {
-  pointer-events: none;
-}
 
 .scroll-to-top {
   position: fixed;
@@ -86,9 +83,6 @@ h6 {
 }
 
 .kava-masthead, .pokladny-masthead {
-    min-height: 30rem;
-    position: relative;
-    display: table;
     width: 100%;
     height: 100%;
     padding-top: 8rem;
@@ -96,6 +90,18 @@ h6 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all .6s ease-in-out;
+    z-index: 900;
+    position: relative;
+    top: 0; left: 0;
+}
+.kava-masthead:hover {
+    transform: scale(2) translate(25%, 25%);
+    z-index: 999;
+}
+.pokladny-masthead:hover {
+    transform: scale(2) translate(25%, -25%);
+    z-index: 999;
 }
 
 @media (max-width: 799px) {
@@ -105,6 +111,7 @@ h6 {
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-size: cover;
+        height: 100% !important;
     }
     .pokladny-masthead {
         background: url("../img/pokladny-bg-masthead-900.jpg");
@@ -112,6 +119,16 @@ h6 {
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-size: cover;
+        height: 100% !important;
+    }
+    .map{
+        height: 200% !important;
+    }
+    .kava-masthead:hover {
+    transform: none;
+    }
+    .pokladny-masthead:hover {
+        transform: none;
     }
 }
 @media (min-width: 800px) {
@@ -178,38 +195,6 @@ h6 {
   }
 }
 
-
-footer.footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-footer.footer .social-link {
-  display: block;
-  height: 4rem;
-  width: 4rem;
-  line-height: 4.3rem;
-  font-size: 1.5rem;
-  background-color: #382929;
-  -webkit-transition: background-color 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out;
-  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
-
-footer.footer .social-link:hover {
-  background-color: #155d74;
-  text-decoration: none;
-}
-
-a {
-  color: #382929;
-}
-
-a:hover, a:focus, a:active {
-  color: #155d74;
-}
-
 .btn-primary {
   background-color: #382929 !important;
   border-color: #382929 !important;
@@ -252,7 +237,4 @@ a:hover, a:focus, a:active {
 
 .text-secondary {
   color: #ecb807 !important;
-}
-.growen {
-    transition: all .2s ease-in-out;
 }
