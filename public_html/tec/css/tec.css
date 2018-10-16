@@ -40,7 +40,7 @@ html {
   text-transform: uppercase;
 }
 a, a:hover, a:active, a:visited {
-  color: inherit;
+  color: black !important;
   text-decoration: none;
 }
 
@@ -84,9 +84,9 @@ h6 {
   font-weight: 800;
 }
 
-.kava-masthead, .pokladny-masthead {
-    width: 25rem;
-    height: 25rem;
+.kava-masthead, .pokladny-masthead, .map-masthead {
+    width: 26rem;
+    height: 26rem;
     padding-top: 8rem;
     padding-bottom: 8rem;
     background-position: center center;
@@ -95,86 +95,62 @@ h6 {
     transition: all .6s ease-in-out;
     top: 0; left: 0;
 }
-.kava-masthead:hover {
+.kava-masthead, .pokladny-masthead {
+    opacity: .8;
+}
+.kava-masthead:hover, .pokladny-masthead:hover {
+    opacity: 1;
+}
+.kava-masthead {
+    background: url("../img/kava-bg-masthead-800.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
+}
+.pokladny-masthead {
+    background: url("../img/pokladny-bg-masthead-900.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.map-masthead {
+    background: url("../img/map-white.jpg");
+    color: black !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    border: none;
+}
+.map-masthead a, .map-masthead a: hover, map-masthead a:visited, map-mathead a:active{
+    color: black !important;
+    text-decoration: none !important;
+}
+.kava-masthead:hover, .pokladny-masthead:hover, .map-masthead:hover {
     transform: scale(1.1);
 }
-.pokladny-masthead:hover {
-    transform: scale(1.1);
+.map-masthead:hover {
+    background: url("../img/map.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.map-masthead:hover h5 {
+    display: none;
 }
 
 @media (max-width: 799px) {
-    .kava-masthead {
-        background: url("../img/kava-bg-masthead-800.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-size: cover;
-        height: 100% !important;
-    }
-    .pokladny-masthead {
-        background: url("../img/pokladny-bg-masthead-900.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-size: cover;
-        height: 100% !important;
-    }
-    .map{
-        height: 200% !important;
-    }
-    .kava-masthead:hover {
-    transform: none;
-    }
-    .pokladny-masthead:hover {
+    .kava-masthead, .pokladny-masthead, .map-masthead {
+         width: 100%;
+         height: auto;
+     }
+    .kava-masthead:hover, .pokladny-masthead:hover, .map-masthead:hover {
         transform: none;
-    }
-}
-@media (min-width: 800px) {
-    .kava-masthead {
-        background: url("../img/kava-bg-masthead-1200.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-size: cover;
-    }
-    .pokladny-masthead {
-        background: url("../img/pokladny-bg-masthead-1200.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-size: cover;
-    }
-}
-@media (min-width: 2000px) {
-    .kava-masthead {
-        background: url("../img/kava-bg-masthead-2000.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-size: cover;
-    }
-    .pokladny-masthead {
-        background: url("../img/pokladny-bg-masthead-2000.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-size: cover;
-    }
-}
-@media (min-width: 3000px) {
-    .kava-masthead {
-        background: url("../img/kava-bg-masthead.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-size: cover;
-    }
-    .pokladny-masthead {
-        background: url("../img/pokladny-bg-masthead.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-size: cover;
     }
 }
 
