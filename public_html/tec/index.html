@@ -10,51 +10,41 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,300italic,400italic,700italic,900" rel="stylesheet" type="text/css">
         <!-- Custom CSS -->
         <link href="css/tec.css" rel="stylesheet">
     </head>
     <body id="page-top">
-        <div class="row h-100 w-100 m-0 p-0">
-            <div class="col-md-6 col-12 m-0 p-0">
-                <a href="../kavovary/index.html">
-                    <div class="kava-masthead h-50 row m-0 p-5 text-center bg-primary align-items-center">
-                        <h1 class="mx-auto w-100 mb-1 text-white merriweather">Servis kávovarů</h1>
-                        <h3 class="mx-auto mb-5 text-white source-sans"><em>kavovary-servis.cz</em></h3>
+        <div class="row mt-5">
+            <div class="col-xl-8 col-lg-10 col-md-12 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <a href="../kavovary/index.html">
+                            <div class="kava-masthead text-center bg-primary align-items-center mx-auto">
+                                <h1 class="mx-auto w-100 mb-1 text-white merriweather">Servis kávovarů</h1>
+                                <h3 class="mx-auto mb-5 text-white merriweather"><em>kavovary-servis.cz</em></h3>
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <a href="../pokladny/index.html">
-                    <div class="pokladny-masthead h-50 m-0 p-5 text-center row bg-primary align-items-center">
-                        <h1 class="mx-auto my-0 text-white text-uppercase roboto-slab">Servis pokladen</h1>
-                        <h3 class="text-white mx-auto mt-2 mb-5 font-family">Dotykové pokladny s&nbsp;EET a&nbsp;skladový software</h3>
+                    <div class="col-md-6 col-12">
+                        <a href="../pokladny/index.html">
+                            <div class="pokladny-masthead text-center bg-primary align-items-center mx-auto">
+                                <h1 class="mx-auto my-0 text-white text-uppercase roboto-slab-heading">Servis pokladen</h1>
+                                <p class="text-white mx-auto mt-2 mb-5 roboto-slab">Dotykové pokladny s&nbsp;EET a&nbsp;skladový software</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-            <div class="col-md-6 col-12 h-100 bg-black m-0 p-0 map">
-                <div id="m" style="height:100%; width: 100%;"></div>
+                </div>
             </div>
         </div>
-    <script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
-    <script type="text/javascript">Loader.load();</script>
-    <script type="text/javascript">
-    //Mapa
-    var center = SMap.Coords.fromWGS84(15.1696028, 50.7167892);
-    var m = new SMap(JAK.gel("m"), center, 17);
-    m.addDefaultLayer(SMap.DEF_BASE).enable();
-    m.addDefaultControls();
-
-    var layer = new SMap.Layer.Marker();
-    m.addLayer(layer);
-    layer.enable();
-
-    var card = new SMap.Card();
-    card.getBody().innerHTML = "Revoluční 185/43<br>466 01 Jablonec nad Nisou";
-
-    var options = { 
-
-    };
-    var marker = new SMap.Marker(center, "myMarker", options);
-    marker.decorate(SMap.Marker.Feature.Card, card);
-    layer.addMarker(marker);
-    </script>
+        <div class="row mt-5">
+            <div class="col-md-4 col-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="mx-auto mt-2 mb-5 mx-auto">Revoluční 185/43,<br>460 01 Jablonec nad Nisou</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

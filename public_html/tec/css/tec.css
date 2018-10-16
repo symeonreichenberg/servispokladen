@@ -4,20 +4,22 @@ html {
   height: 100%;
 }
 
-.source-sans {
-    font-family: 'Source Sans Pro', Arial, sans-serif;
-}
-.raleway {
-    font-family: 'Raleway', Arial, sans-serif;
-}
 .roboto-slab {
     font-family: 'Roboto Slab', Times New Roman, serif;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+}
+.roboto-slab-heading {
+    font-family: 'Roboto Slab', Times New Roman, serif;
+    font-size: 3rem;
+    line-height: 3rem;
     letter-spacing: 0.5rem;
 }
 .merriweather {
     font-family: 'Merriweather', Times New Roman, serif;
+}
+.merriweather-heading {
+    font-family: 'Merriweather', Times New Roman, serif;
+    font-size: 3rem;
+    line-height: 3rem;
 }
 
 .btn-xl {
@@ -83,25 +85,21 @@ h6 {
 }
 
 .kava-masthead, .pokladny-masthead {
-    width: 100%;
-    height: 100%;
+    width: 25rem;
+    height: 25rem;
     padding-top: 8rem;
     padding-bottom: 8rem;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: all .6s ease-in-out;
-    z-index: 900;
-    position: relative;
     top: 0; left: 0;
 }
 .kava-masthead:hover {
-    transform: scale(2) translate(25%, 25%);
-    z-index: 999;
+    transform: scale(1.1);
 }
 .pokladny-masthead:hover {
-    transform: scale(2) translate(25%, -25%);
-    z-index: 999;
+    transform: scale(1.1);
 }
 
 @media (max-width: 799px) {
