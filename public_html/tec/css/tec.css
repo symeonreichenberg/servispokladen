@@ -44,7 +44,6 @@ a, a:hover, a:active, a:visited {
   text-decoration: none;
 }
 
-
 h1,
 h2,
 h3,
@@ -89,9 +88,6 @@ h6 {
     height: 26rem;
     padding-top: 8rem;
     padding-bottom: 8rem;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     transition: all .6s ease-in-out;
     top: 0; left: 0;
 }
@@ -141,12 +137,12 @@ h6 {
     background-size: cover;
 }
 .map-masthead:hover h5 {
-    display: none;
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
 }
 
-@media (max-width: 799px) {
+@media (max-width: 575px) {
     .kava-masthead, .pokladny-masthead, .map-masthead {
-         width: 100%;
+         width: 100% !important;
          height: auto;
      }
     .kava-masthead:hover, .pokladny-masthead:hover, .map-masthead:hover {
