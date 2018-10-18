@@ -68,7 +68,7 @@ $('.map').on('click', onMapClickHandler);
 var center = SMap.Coords.fromWGS84(15.1696028, 50.7167892);
 var m = new SMap(JAK.gel("m"), center, 17);
 m.addDefaultLayer(SMap.DEF_BASE).enable();
-//m.addDefaultControls();
+m.addDefaultControls();
 
 var layer = new SMap.Layer.Marker();
 m.addLayer(layer);
