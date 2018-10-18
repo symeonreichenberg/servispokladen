@@ -68,7 +68,7 @@ $('.map').on('click', onMapClickHandler);
 var center = SMap.Coords.fromWGS84(15.1696028, 50.7167892);
 var m = new SMap(JAK.gel("m"), center, 17);
 m.addDefaultLayer(SMap.DEF_BASE).enable();
-m.addDefaultControls();
+//m.addDefaultControls();
 
 var layer = new SMap.Layer.Marker();
 m.addLayer(layer);
@@ -78,9 +78,6 @@ var card = new SMap.Card();
 card.getHeader().innerHTML = "<strong>kavovary-servis.cz</strong>";
 card.getBody().innerHTML = "Revoluční 185/43<br>466 01 Jablonec nad Nisou";
 
-var options = { 
-
-};
-var marker = new SMap.Marker(center, "myMarker", options);
+var marker = new SMap.Marker(center, "myMarker");
 marker.decorate(SMap.Marker.Feature.Card, card);
 layer.addMarker(marker);

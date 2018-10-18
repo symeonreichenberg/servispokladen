@@ -37,9 +37,16 @@ h6 {
 }
 
 .text-faded {
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
-
+#kontakty-text a, #kontakty-text a:visited, #kontakty-text a:active {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+#kontakty-text a:hover {
+    color: white;
+    text-decoration: underline;
+}
 /* Map */
 .map {
   height: 30rem;
