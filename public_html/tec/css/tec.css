@@ -83,7 +83,7 @@ h6 {
   font-weight: 800;
 }
 
-.kava-masthead, .pokladny-masthead, .map-masthead {
+.kava-masthead, .pokladny-masthead, .map-masthead, .shop-masthead {
     width: 26rem;
     height: 26rem;
     padding-top: 8rem;
@@ -91,10 +91,10 @@ h6 {
     transition: all .6s ease-in-out;
     top: 0; left: 0;
 }
-.kava-masthead, .pokladny-masthead {
+.kava-masthead, .pokladny-masthead, .shop-masthead {
     opacity: .8;
 }
-.kava-masthead:hover, .pokladny-masthead:hover {
+.kava-masthead:hover, .pokladny-masthead:hover, .shop-masthead:hover {
     opacity: 1;
 }
 .kava-masthead {
@@ -122,11 +122,21 @@ h6 {
     background-size: cover;
     border: none;
 }
+
+.shop-masthead {
+    background: url("../img/shop.jpg");
+    color: black !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    border: none;
+}
 .map-masthead a, .map-masthead a: hover, map-masthead a:visited, map-mathead a:active{
     color: black !important;
     text-decoration: none !important;
 }
-.kava-masthead:hover, .pokladny-masthead:hover, .map-masthead:hover {
+.kava-masthead:hover, .pokladny-masthead:hover, .map-masthead:hover, .shop-masthead:hover {
     transform: scale(1.1);
 }
 .map-masthead:hover {
@@ -141,11 +151,11 @@ h6 {
 }
 
 @media (max-width: 575px) {
-    .kava-masthead, .pokladny-masthead, .map-masthead {
+    .kava-masthead, .pokladny-masthead, .map-masthead, .shop-masthead {
          width: 100% !important;
          height: auto;
      }
-    .kava-masthead:hover, .pokladny-masthead:hover, .map-masthead:hover {
+    .kava-masthead:hover, .pokladny-masthead:hover, .map-masthead:hover, .shop-masthead:hover {
         transform: none;
     }
 }

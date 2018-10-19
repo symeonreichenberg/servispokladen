@@ -35,7 +35,10 @@ h6 {
   font-weight: 700;
   font-family: 'Merriweather', Times New Roman, serif;
 }
-
+a, a:active, a:visited {
+    font-weight: 700;
+    text-decoration: underline;
+}
 .text-faded {
     color: rgba(255, 255, 255, 0.7);
 }
@@ -100,7 +103,7 @@ h6 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.reference {
+.reference, .paper {
     padding: 5rem 0;
     background-position: center center;
     background-repeat: no-repeat;
@@ -121,6 +124,13 @@ h6 {
         background-attachment: scroll;
         background-size: cover;
     }
+    .paper {
+        background: url("../img/paper-800.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
 }
 @media (min-width: 800px) {
     .masthead {
@@ -132,6 +142,22 @@ h6 {
     }
     .reference {
         background: url("../img/bg-reference-1200.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .paper {
+        background: url("../img/paper-1200.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+}
+@media (min-width: 1500px) {
+    .paper {
+        background: url("../img/paper-1500.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: scroll;
