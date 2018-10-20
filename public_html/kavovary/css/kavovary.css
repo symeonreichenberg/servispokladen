@@ -35,10 +35,6 @@ h6 {
   font-weight: 700;
   font-family: 'Merriweather', Times New Roman, serif;
 }
-a, a:active, a:visited {
-    font-weight: 700;
-    text-decoration: underline;
-}
 .text-faded {
     color: rgba(255, 255, 255, 0.7);
 }
@@ -103,6 +99,15 @@ a, a:active, a:visited {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.paper p {
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 1);
+    font-size: 120% !important;
+}
+.paper a, .paper a:visited, .paper a:active {
+    text-decoration: underline !important;
+    font-weight: 700 !important;
+    color: #343a40 !important;
+}
 .reference, .paper {
     padding: 5rem 0;
     background-position: center center;
@@ -131,6 +136,7 @@ a, a:active, a:visited {
         background-attachment: scroll;
         background-size: cover;
     }
+
 }
 @media (min-width: 800px) {
     .masthead {

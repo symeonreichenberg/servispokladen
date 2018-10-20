@@ -81,60 +81,118 @@
 }
 
 .masthead {
-	position: relative;
-	width: 100%;
-	height: auto;
-	min-height: 35rem;
-	padding: 15rem 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+}
+.kavovary {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 5rem 0;
 }
 .logo {
-	height: 80px;
+    height: 80px;
 }
 .mapa {
-	-webkit-transition: opacity 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out;  
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;  
 }
 .mapa:hover {
-	opacity: 0.6;  
+    opacity: 0.6;  
 }
 @media (max-width: 899px) {
-	.masthead {
-		background: url("../img/bg-masthead-900.jpg");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-		background-size: cover;
-	}
-	.logo {
-		height: 45px;
-	}
+    .masthead {
+        background: url("../img/bg-masthead-900.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .kavovary {
+        background: url("../img/kavovary800-bw.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .kavovary:hover {
+        background: url("../img/kavovary800.jpg");
+    }
+    .logo {
+            height: 45px;
+    }
 }
 @media (min-width: 900px) {
-	.masthead {
-		background: url("../img/bg-masthead-1200.jpg");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-		background-size: cover;
-	}
+    .masthead {
+        background: url("../img/bg-masthead-1200.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .kavovary {
+        background: url("../img/kavovary800-bw.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .kavovary:hover {
+        background: url("../img/kavovary800.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
 }
 @media (min-width: 2000px) {
-	.masthead {
-		background: url("../img/bg-masthead-2000.jpg");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-		background-size: cover;
-	}
+    .masthead {
+        background: url("../img/bg-masthead-2000.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .kavovary {
+        background: url("../img/kavovary800-bw.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .kavovary:hover {
+        background: url("../img/kavovary800.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
 }
 @media (min-width: 3000px) {
-	.masthead {
-		background: url("../img/bg-masthead.jpg");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-		background-size: cover;
-	}
+    .masthead {
+        background: url("../img/bg-masthead.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .kavovary {
+        background: url("../img/kavovary800-bw.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .kavovary:hover {
+        background: url("../img/kavovary800.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
 }
 .masthead h1 {
   font-family: 'Roboto Slab', serif;

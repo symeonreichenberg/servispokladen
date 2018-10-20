@@ -136,7 +136,7 @@ h6 {
     color: black !important;
     text-decoration: none !important;
 }
-.kava-masthead:hover, .pokladny-masthead:hover, .map-masthead:hover, .shop-masthead:hover {
+.kava-masthead:hover, .pokladny-masthead:hover, .map-masthead:hover {
     transform: scale(1.1);
 }
 .map-masthead:hover {
