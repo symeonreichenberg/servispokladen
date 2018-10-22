@@ -7,7 +7,10 @@ html {
 body {
   font-family: 'Source Sans Pro', Arial, sans-serif;
 }
-
+.roboto-slab {
+    font-family: 'Roboto Slab', Times New Roman, serif;
+    font-weight: 400 !important; 
+}
 .btn-xl {
   padding: 1.25rem 2.5rem;
 }
@@ -100,15 +103,18 @@ h6 {
     background-size: cover;
 }
 .paper p {
-    text-shadow: 4px 4px 10px rgba(255, 255, 255, 1);
-    font-size: 120% !important;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+    font-size: 140% !important;
 }
 .paper a, .paper a:visited, .paper a:active {
     text-decoration: underline !important;
     font-weight: 700 !important;
     color: #343a40 !important;
 }
-.reference, .paper {
+.pokladny h1, .pokladny h2, .pokladny h3, .pokladny h4, .pokladny p {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+}
+.reference, .paper, .pokladny {
     padding: 5rem 0;
     background-position: center center;
     background-repeat: no-repeat;
@@ -131,6 +137,13 @@ h6 {
     }
     .paper {
         background: url("../img/paper-800.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .pokladny {
+        background: url("../img/pokladny-900.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: scroll;
@@ -160,11 +173,25 @@ h6 {
         background-attachment: scroll;
         background-size: cover;
     }
+    .pokladny {
+        background: url("../img/pokladny-900.jpg");
+        background-position: 100% 70%;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
 }
 @media (min-width: 1500px) {
     .paper {
         background: url("../img/paper-1500.jpg");
-        background-position: center;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .pokladny {
+        background: url("../img/pokladny-1200.jpg");
+        background-position: 100% 70%;
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-size: cover;
@@ -181,6 +208,13 @@ h6 {
     .reference {
         background: url("../img/bg-reference-2000.jpg");
         background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .pokladny {
+        background: url("../img/pokladny-2000.jpg");
+        background-position: 100% 65%;
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-size: cover;
