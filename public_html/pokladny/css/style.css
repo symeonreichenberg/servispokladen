@@ -418,3 +418,9 @@ a:focus, a:hover {
 footer {
   padding: 5rem 0;
 }
+.pdf_icon {
+  height: 4rem;
+}
+.pdf_icon:hover, .pdf_icon:focus {
+  opacity: .6;
+}
