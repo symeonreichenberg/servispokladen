@@ -396,6 +396,7 @@ body {
 
 a {
   color: #17a2b8;
+  display: block;
 }
 
 a:focus, a:hover {
