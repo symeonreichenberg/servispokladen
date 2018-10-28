@@ -87,7 +87,7 @@ checkLength.prototype.check = function() {
         that.showing[index] = false;
       }
     }
-    theMore.text(that.showing[index] ? "...číst dál" : "");
+    theMore.text(that.showing[index] ? "...číst dál" : "Zavřít");
   });
 };
 
