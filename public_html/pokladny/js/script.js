@@ -65,6 +65,12 @@ $(".child").each(function(i){
   }
   i++;
 });
+$(".grad").each(function(i){
+  if(i%2===0){
+    $(this).addClass("grad_gray");
+  }
+  i++;
+});
 
 function checkLength() {
     this.showing = new Array();
