@@ -40,7 +40,14 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
-
+function showAllProducts() {
+    var x = document.getElementById('products');
+    x.style.height = "auto";
+    var y = document.getElementById('showAllProducts');
+    y.style.display = "none";
+    var z = document.getElementById('products_bottom');
+    z.style.display = "none";
+}
 function hideClanek1() {
     var x = document.getElementById('btn_clanek_1');
     x.style.display = "none";
@@ -78,7 +85,7 @@ function checkLength() {
 //hide long content
 checkLength.prototype.check = function() {
   var that = this;
-  $('.article').each(function (index) {
+  $('.article_long').each(function (index) {
     var article = $(this);
     var theP = article.find('p');
     var theMore = article.find('.more');
