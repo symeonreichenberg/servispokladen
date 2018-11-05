@@ -68,7 +68,13 @@ $('.map').on('click', onMapClickHandler);
 var center = SMap.Coords.fromWGS84(15.1696028, 50.7167892);
 var m = new SMap(JAK.gel("m"), center, 17);
 m.addDefaultLayer(SMap.DEF_BASE).enable();
-m.addDefaultControls();
+var o = {title:"Posun mapy"};
+var c = new SMap.Control.Compass(o);
+m.addControl(c, {left:"8px", top:"9px"});
+
+var z = {title:"zoom"};
+var zz = new SMap.Control.Zoom(z);
+m.addControl(zz, {right:"8px", top:"9px"});
 
 var layer = new SMap.Layer.Marker();
 m.addLayer(layer);

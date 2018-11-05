@@ -52,6 +52,7 @@ h6 {
 /* Map */
 .map {
   height: 30rem;
+  z-index: 800;
 }
 
 @media (max-width: 992px) {
@@ -404,6 +405,17 @@ h6 {
   line-height: 110% !important;
 }
 
+footer {
+  font-size: 80%;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 999 !important;
+}
+footer a {
+  color: rgba(255, 255, 255, 0.8);
+}
+footer a:hover, footer a:active {
+  color: rgba(255, 255, 255, 1);
+}
 @media (min-width: 992px) {
     .portfolio-item {
     display: inline-block;
