@@ -362,7 +362,7 @@
   padding: 3rem;
   font-size: 90%;
 }
-.vzdaleny_pristup_1, .vzdaleny_pristup_2 {
+.vzdaleny_pristup_1, .vzdaleny_pristup_2, .vzdaleny_pristup_3 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
@@ -382,6 +382,12 @@
 .vzdaleny_pristup_2:hover {
     background-image: url('../img/vzdaleny_pristup_2.png');
     }
+.vzdaleny_pristup_3 {
+    background-image: url('../img/vzdaleny_pristup_3_bw.png');
+    }
+.vzdaleny_pristup_3:hover {
+    background-image: url('../img/vzdaleny_pristup_3.png');
+    }    
 @media (min-width: 992px) {
   .projects-section .project-text {
     padding: 5rem;
