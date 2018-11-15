@@ -500,3 +500,17 @@ footer {
 .pdf_icon:hover, .pdf_icon:focus {
   opacity: .6;
 }
+.lupa {
+  background-image: url(../img/magnifying_glass.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  transition: background-size 1s ease-in-out;
+  color: black !important;
+}
+.lupa a, .lupa a:active, .lupa a:visited {
+  color: #212529 !important;
+}
+.lupa:hover, .lupa:active {
+  background-size: 40px 40px;
+}
