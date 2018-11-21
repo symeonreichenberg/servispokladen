@@ -507,15 +507,20 @@ footer {
   background-position: top right;
   transition: background-size 0.5s ease-in-out;
   color: black !important;
+  height: 30px !important;
+  vertical-align: middle;
+  padding-right: 30px;
 }
-.lupa a, .lupa a:active, .lupa a:visited {
+.article h3, article p, article a, .article a:active, .article a:visited, .text-basic {
   color: #212529 !important;
+}
+.article h3:hover, article p:hover, article a:hover, .text-basic:hover {
+  color: #3c6360 !important;
 }
 .lupa:hover, .lupa:active {
   background-size: 30px 30px;
 }
-@media (min-width: 767px) and (max-width: 992px) {
-  .lupa {
-    background-image: none;
-  }
+.spacing {
+  width: 3rem;
+  height: 3rem;
 }
