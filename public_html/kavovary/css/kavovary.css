@@ -360,7 +360,10 @@ h6 {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
     background-size: cover;
 }
-
+.product-detail, .product-detail:hover, .product-detail:active, .product-detail:active, .product-detail:visited {
+	color: inherit !important;
+	text-decoration: none;
+}
 .callout h2 {
   font-size: 3.5rem;
   font-weight: 700;
