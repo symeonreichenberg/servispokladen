@@ -114,3 +114,15 @@ function includeHTML() {
     }
   }
 }
+function showSemiprofProducts() {
+	var x = document.getElementById('SemiprofProducts');
+	x.style.display = "block";
+	var y = document.getElementById('showSemiprofProducts');
+	y.style.display = "none";
+}
+function showProfProducts() {
+	var x = document.getElementById('ProfProducts');
+	x.style.display = "block";
+	var y = document.getElementById('showProfProducts');
+	y.style.display = "none";
+}

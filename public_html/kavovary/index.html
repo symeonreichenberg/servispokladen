@@ -115,23 +115,29 @@
 					<p>Od roku 2000 se firma věnuje prodeji a servisu kávovarů značek FIORENZATO, RENEKA, SAECO a&nbsp;LA&nbsp;SAN&nbsp;MARCO a hledání vhodných řešení pro jednotlivce, kavárny, restaurace či hotelová zařízení. Naší snahou je dodat vždy vhodně dimenzované přístroje, které uspokojí požadavky Vás a&nbsp;vašich hostů.</p>
 					<p>Naše společnost se zabývá prodejem a následným servisem profesionálních i poloprofesionálních pákových nebo automatických kávovarů, z&nbsp;nichž některé jsou vhodné i pro domácí použití.</p>
 				</div>
-				<div class="d-flex flex-md-row flex-column text-center text-md-left align-items-center">
-					<div class="mr-0 mr-md-5">
+				<div class="d-flex flex-md-row flex-column text-center text-md-left align-items-start">
+					<div class="mr-0 mr-md-5 d-flex justify-content-start">
 						<img src="img/beans.png" class="beans bg-prodej-1">
 					</div>
 					<div class="col-12 col-md-6">
 						<h2>Poloprofesionální řešení</h2>
 						<p class="mb-1"><em>Automatické a poloautomatické kávovary</em></p>
 						<p class="mb-0">Vhodné do menších provozoven, kde není kladen důraz na rychlost výdeje kávy.</p>
-						<div include-html="reseni/poloprofesionalni/01.html" class="child"></div>
+						<button id="showSemiprofProducts" class="btn btn-primary py-2 my-4" onclick="showSemiprofProducts()">Zobrazit vybrané produkty</button>
+						<div id="SemiprofProducts" style="display: none;">
+							<div include-html="reseni/poloprofesionalni/01.html" class="child my-4"></div>
+						</div>
 					</div>
 				</div>
-				<div class="d-flex flex-md-row flex-column mt-md-5 mt-0 mb-md-5 mb-0 text-center text-md-right align-items-center justify-content-end">
+				<div class="d-flex flex-md-row flex-column mt-md-5 mt-0 mb-md-5 mb-0 text-center text-md-right align-items-start justify-content-end">
 					<div class="order-2 order-md-1 col-12 col-md-6">
 						<h2>Profesionální řešení</h2>
 						<p class="mb-1"><em>Pákové kávovary</em></p>
 						<p class="mb-0">Přístroje připravené pro náročný provoz. Díky důrazu na kvalitu, rychlost výdeje kávy a trvalé připojení ke zdroji pitné vody.</p>
-						<div include-html="reseni/profesionalni/01.html" class="child"></div>
+						<button id="showProfProducts" class="btn btn-primary py-2 my-4" onclick="showProfProducts()">Zobrazit vybrané produkty</button>
+						<div id="ProfProducts" style="display: none;">
+							<div include-html="reseni/profesionalni/01.html" class="child my-4"></div>
+						</div>
 					</div>
 					<div class="order-1 order-md-2 ml-0 ml-md-5">
 						<img src="img/beans.png" class="beans bg-prodej-2">
