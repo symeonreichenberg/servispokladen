@@ -607,3 +607,6 @@ a:hover, a:focus, a:active {
         display: none !important;
     }
 }
+.price {
+    font-size: 130%;
+}
