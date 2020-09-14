@@ -51,15 +51,15 @@ h6 {
 }
 /* Map */
 .map {
-  height: 30rem;
+  height: 540px;
   z-index: 800;
 }
 
-@media (max-width: 992px) {
+/*@media (max-width: 992px) {
   .map {
     height: 75%;
   }
-}
+}*/
 
 .map iframe {
   pointer-events: none;
